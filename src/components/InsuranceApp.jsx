@@ -2,6 +2,7 @@ import React from 'react'
 import Form from './Form'
 import useCarInsurance from '../hooks/useCarInsurance'
 import Loading from './Loading';
+import InfoCalc from './InfoCalc';
 
 const InsuranceApp = () => {
 
@@ -14,7 +15,7 @@ const InsuranceApp = () => {
         </header>
         <main className='bg-white md:w-2/3 lg:2/4 mx-auto shadow rounded-lg p-10'>
             <Form/>
-            {loading ? <Loading/> : price }
+            {loading ? <Loading/> : <InfoCalc/> }
         </main>
     </>
   )

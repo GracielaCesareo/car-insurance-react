@@ -52,6 +52,7 @@ const CarInsuranceProvider = ({children}) => {
 
         setTimeout(() => {
             setPrice(basePrice)
+            console.log(basePrice)
             setLoading(false)
         }, "2000")
 
